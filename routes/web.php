@@ -68,3 +68,8 @@ Route::get('identitas/{nama}/{bb}/{tb}', function ($nama, $bb, $tb) {
             "Nilai BMI =  $bmi <br>".
             "Keterangan = $ket";
 });
+
+// Route Optional Parameter -> ditandai dengan ?
+Route::get ('myname/{nama?}', function($a = "Felisa"){
+    return "my name is $a";
+});

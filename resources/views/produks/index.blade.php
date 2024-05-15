@@ -22,11 +22,11 @@
                  @foreach ($produk as $data )
                  <div class="col-4 mt-5">
                      <div class="card" style="width: 18rem;">
-                         <img src="..." class="card-img-top" alt="...">
+                         <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                          <div class="card-body">
                            <h5 class="card-title">{{ $data->nama_produk}}</h5>
-                           <p class="card-text">{{ $data->jumlah}}</p>
-                           <a href="#" class="btn btn-primary">Go somewhere</a>
+                           <p class="card-text">{{$data->jumlah}}</p>
+                           <a href="{{$data->id}}" class="btn btn-primary">more detail</a>
                          </div>
                        </div>
                  </div> 

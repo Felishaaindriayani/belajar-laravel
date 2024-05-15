@@ -19,21 +19,19 @@
     <div class="section">
         <div class="container">
             <div class="row mt-5">
-                <center><h3>List Artikel</h3></center>
+                <center><h3>Show Artikel</h3></center>
             </div>
             <div class="row mt-5">
-                @foreach ($post as $data )
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1609618298169-425a11118f24?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">{{ $data->title }}</h5>
-                          <p class="card-text">{{ $data->content}}</p>
+                          <h5 class="card-title">{{ $post->title }}</h5>
+                          <p class="card-text">{{ $post->content}}</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                       </div>
                 </div> 
-                @endforeach
             </div>
         </div>
     </div>
